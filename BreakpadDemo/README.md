@@ -1,8 +1,18 @@
-### BreakPad Demo
+## BreakPad Demo
+### NDK Crash 捕获
+参照资料
+https://github.com/AndroidAdvanceWithGeektime/Chapter01
 
-#### Crash Log
+#### BreakPad 生成的 dmp 文件分析
+使用 PC 端 BreakPad 编译的工具把 dmp 文件转换成文本文件
 
+```bash
+/breakpad-master/src/processor/minidump_stackwalk 8cd8a6df-0136-434a-5ec8948b-6de7d263.dmp > crash.txt
 ```
+
+crash.txt 文件开头如下：
+
+```txt
 Operating system: Android
                   0.0.0 Linux 3.18.56+ #1 SMP PREEMPT Thu Oct 12 18:30:37 PDT 2017 i686
 CPU: x86
@@ -27,3 +37,4 @@ Thread 0 (crashed)
  2  0xa8e5a000
  
  ```
+#### Crash 
