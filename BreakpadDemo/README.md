@@ -1,6 +1,7 @@
 ## BreakPad Demo
 ### NDK Crash 捕获
-参照资料
+参照资料  
+https://github.com/google/breakpad  
 https://github.com/AndroidAdvanceWithGeektime/Chapter01
 
 #### BreakPad 生成的 dmp 文件分析
