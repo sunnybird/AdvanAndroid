@@ -37,4 +37,12 @@ Thread 0 (crashed)
  2  0xa8e5a000
  
  ```
-#### Crash 
+#### 定位源码 Crash 位置
+使用 NDK 工具 arm-linux-androideabi-addr2line ($NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin) 即可查看源码出错的位置
+
+``` bash
+arm-linux-androideabi-addr2line -f -C -e libbreakpad-native.so 0x228fe
+```
+
+
+
